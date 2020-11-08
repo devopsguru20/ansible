@@ -1,0 +1,9 @@
+---
+- hosts: controller
+  become: yes
+  name: play1
+  tasks:
+     - name: excute command 'Date'
+       command: date
+     - name: execute script on server
+       script: test_script.sh
